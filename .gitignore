@@ -1,6 +1,7 @@
 # PlatformIO build artifacts
 .pio/
 .pioenv/
+.cache/*
 
 # VS Code workspace settings (keep .vscode/extensions.json if desired)
 .vscode/settings.json

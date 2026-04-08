@@ -10,12 +10,8 @@ DisplayManager::DisplayManager()
 bool DisplayManager::begin() {
   // Initialise TFT driver
   _tft.init();
-  _tft.invertDisplay(false);  // ST7789 init sends INVON by default; undo it
+  _tft.invertDisplay(false); // ST7789 init sends INVON by default; undo it
   _tft.setRotation(SCREEN_ROTATION);
-  // ST7789 driver hardcodes BGR bit in MADCTL; this panel uses RGB order.
-  // 0x60 = MX(0x40) | MV(0x20) = landscape, RGB order, BGR bit cleared.
-  _tft.writecommand(0x36);
-  _tft.writedata(0x60);
   _tft.fillScreen(TFT_BLACK);
 
   // Create a full-screen sprite for double-buffering.
