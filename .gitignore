@@ -1,0 +1,56 @@
+# PlatformIO build artifacts
+.pio/
+.pioenv/
+
+# VS Code workspace settings (keep .vscode/extensions.json if desired)
+.vscode/settings.json
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Compiled object files
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+
+# Logs / debug output
+*.log
+
+# Editor backups
+*.bak
+*.swp
+*.swo
+
+# Environment / secrets (never commit)
+.env
+secrets.h
+credentials.h
